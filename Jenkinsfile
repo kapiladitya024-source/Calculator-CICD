@@ -3,7 +3,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = 'svnsaisathvik/calculator-api'
+        DOCKER_IMAGE = 'kapiladityareddy/calculator-api'
         IMAGE_TAG = "${BUILD_NUMBER}"
     }
 
@@ -100,7 +100,7 @@ pipeline {
             echo 'Pipeline completed successfully!'
 
             emailext(
-                to: 'saisathviksvn@gmail.com', // Change to your recipient email
+                to: 'kapiladitya024@gmail.com', // Change to your recipient email
                 subject: "SUCCESS: ${env.JOB_NAME} - Build #${env.BUILD_NUMBER}",
                 body: """
                     <h2>Pipeline Succeeded!</h2>
