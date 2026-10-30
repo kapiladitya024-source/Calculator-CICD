@@ -1,7 +1,7 @@
 
 services:
   calculator:
-    image: svnsaisathvik/calculator-api:${IMAGE_TAG:-2.0}
+    image: kapiladityareddy/calculator-api:${IMAGE_TAG:-2.0}
     container_name: calculator-container
     expose:
       - "8080"
